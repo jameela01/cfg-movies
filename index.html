@@ -1,63 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Romcom Movie Reviews</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/83fc3db2aa.js" crossorigin="anonymous"></script>
+    <title>Romcom Movie Reviews</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 <body>
-	<header>
-		<h1>CupidFlicks</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#reviews">Movie Reviews</a></li>
-				<li><a href="#contact">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-		<section id="about">
-			<h2>About Us</h2>
-			<p>We are a group of romcom movie enthusiasts who love to watch and review the latest romantic comedies. Our goal is to provide honest and insightful reviews to help you decide which movies are worth watching.</p>
-		</section>
-
-		<section id="reviews">
-			<h2>Movie Reviews</h2>
-			<article>
-				<h3>Crazy Rich Asians</h3>
-				<img src="crazy-rich-asians.jpg" alt="Crazy Rich Asians movie poster">
-				<p>Rating: 4/5</p>
-				<p>Review: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac semper justo. Mauris quis dolor ligula. Sed feugiat eget risus vitae ultrices. Sed eget dignissim nunc.</p>
-			</article>
-
-			<article>
-				<h3>To All the Boys I've Loved Before</h3>
-				<img src="to-all-the-boys.jpg" alt="To All the Boys I've Loved Before movie poster">
-				<p>Rating: 4.5/5</p>
-				<p>Review: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac semper justo. Mauris quis dolor ligula. Sed feugiat eget risus vitae ultrices. Sed eget dignissim nunc.</p>
-			</article>
-		</section>
-
-		<section id="contact">
-			<h2>Contact Us</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name"><br>
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email"><br>
-
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea><br>
-
-				<input type="submit" value="Submit">
-			</form>
-		</section>
-	</main>
-
-	<footer>
-		<p>&copy; 2023 Romcom Movie Reviews</p>
-	</footer>
+    <nav>
+        <ul>
+            <li class="logo">Cupid Flicks</li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                    <span class="fas fa-search"></span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <h1>Best Romantic Comedies</h1>
+    <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="image1.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image2.jpg" alt="">
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image3.jpg" alt="">
+                    </div>
+     <div class="movie-list-item">
+    <img class="movie-list-item-img" src="image4.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image5.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image6.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image7.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image8.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image9.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image10.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image11.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image12.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image13.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image14.jpg" alt="">
+</div>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="image15.jpg" alt="">
+</div>
+</div>
+</div>
+<button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="button-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <script>
+     $('nav ul li.btn span').click(function () {
+            $('nav ul div.items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
