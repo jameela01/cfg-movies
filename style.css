@@ -1,175 +1,244 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins")
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+body {
+    background-color: rgb(231, 140, 160);
+}
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
+    color:pink;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-html,body{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
-    background: #000;
+nav {
+    background: #222222;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
 }
 
-.container{
-    position: relative;
-    width: 400px;
-    background: #111;
-    padding: 20px 30px;
-    border-radius: 5px;
+nav ul {
     display: flex;
+    list-style: none;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-
-    
 }
 
-.container .post{
-    display: none;
-
+nav ul li.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
 }
 
-.container .text{
-    font-size:25px;
-    color: #665;
-    font-weight: 500;
-
-
+nav ul div.items {
+    padding: 0 25px;
+    display: inline-flex;
 }
 
-
-.container .edit{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size:16px;
-    color: #665;
-    font-weight: 500;
-    cursor: pointer;
-
-
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
 }
 
-.container .edit :hover{
-    text-decoration:underline;
-
+nav ul div.items a:hover {
+    color: cyan;
 }
 
-.container .star-widget input{
-    display: none;
-
+nav ul .search-icon {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
 }
 
-.star-widget label{
-    font-size: 40px;
-    color:#444;
-    padding: 10px;
-    float:right;
-    transition:all 0.2s ease;
-
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color:#fd4;
+nav ul .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
 }
 
-
-input:checked ~ label{
-    color:#fd4;
-}
-
-
-input#rate-5:checked ~ label{
-    color:#fe7;
-    text-shadow: 0 0 20px #952;
-
-}
-input#rate-1:checked ~ form header::before{
-    content: "I just hate it 😠";
-
-}
-input#rate-2:checked ~ form header::before{
-    content: "I don't like it 😔";
-
-}
-input#rate-3:checked ~ form header::before{
-    content: "It is awesome 😀";
-
-}
-input#rate-4:checked ~ form header::before{
-    content: "I just like it 😎";
-
-}
-input#rate-5:checked ~ form header::before{
-    content: "I just love it 😍";
-
-}
-.container form{
-    display: none;
-}
-input:checked ~ form{
-    display: block;
-}
-
-form header{
-    width: 100%;
-    font-size: 25px;
-    color: #f67;
-    font-weight: 500;
-    margin: 5px 0 20px 0;
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
     text-align: center;
-    transition:  all 0.2s ease;
-
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
+nav ul .search-icon .icon:hover {
+    background: #e6e6e6;
+}
 
+nav ul .search-icon .icon span {
+    color: #222222;
+    font-size: 18px;
+}
 
+nav ul li.btn {
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+}
 
-form .textarea{
-    width: 100%;
-    height: 100px;
+nav ul li.btn span {
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #151515;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li.btn span.show:before {
+    content: '\f00d';
+}
+
+@media screen and (max-width: 1052px) {
+    nav {
+        padding: 10px 40px 10px 0px;
+    }
+
+    nav ul li.logo {
+        display: none;
+    }
+
+    nav ul div.items {
+        flex: 4;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav ul li.btn {
+        display: block;
+    }
+
+    nav {
+        z-index: 1;
+        padding: 9px 40px 9px 0;
+    }
+
+    nav ul div.items {
+        z-index: -1;
+        position: fixed;
+        top: -220px;
+        right: 0;
+        width: 100%;
+        background: #222222;
+        display: inline-block;
+        transition: top .4s;
+    }
+
+    nav ul div.items.show {
+        top: 60px;
+    }
+
+    nav ul div.items li {
+        text-align: center;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+
+    nav ul div.items li a {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav ul li.search {
+        width: 50vmin;
+    }
+
+    nav ul li input {
+        width: 40vmin;
+    }
+
+    nav ul li .search-icon {
+        width: 10vmin;
+    }
+}
+    h1 {
+        font-size: 20px;
+        color:black;
+        padding: 20px 20px;
+    }
+.movie-list-container {
+    padding: 0 20px;
+}
+
+.movie-list-wrapper {
+    position: relative;
     overflow: hidden;
 }
 
-form .textarea textarea{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    color: #eee;
-    border: 1px solid #333;
-    background:#222;
-    padding:10px;
-    font-size: 17px;
-    resize: none;
+.movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
 
-form .btn{
-    height: 45px;
-    width: 100%;
-    margin: 15px 0;
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
 }
 
-form .btn button{
-    height: 100%;
-    width: 100%;
-    border: 1px solid #444 ;
-    outline: none;
-    background: #222;
-    color: #999;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+}
+.movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
     cursor: pointer;
-    transition: all 0.3s ease;
-
 }
-
-form .btn button :hover{
-    background: #1b1b1b;
-
+h2 {
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+p {
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 500px;
+    color: pink;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.info {
+    background-color:#222222;
+    margin: auto;
+    padding: 30px;
+    width: 600px;
+    border: 1px none #222222;
+    text-align: center;   
 }
