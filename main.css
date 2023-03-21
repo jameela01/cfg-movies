@@ -4,12 +4,11 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+
 header {
-	background-color: #f8f8f8;
 	padding: 20px;
 	box-shadow: 0px 2px 5px #ccc;
 }
-
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -26,6 +25,11 @@ nav ul li a {
 	color: #333;
 	font-weight: bold;
 	font-size: 18px;
+}
+.search_input {
+	width:300px;
+	height:30px;
+	border-radius:10px;
 }
 
 main {
@@ -58,4 +62,61 @@ article img {
 article p:first-of-type {
 	font-weight: bold;
 	color: #f9a602; /* yellow */
+}
+movie-list-container movie-list-wrapper{
+	display: inline-block;
+}
+movie-list-container movie-list-wrapper movie-list img
+{
+width:100px;
+height:200px;
+}
+
+.rating 
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) rotateY(180deg);
+	display:flex;
+
+}
+.rating input {
+	display: none;
+}
+
+.rating label{
+	display:block;
+	cursor:pointer;
+	width: 50px;
+}
+.rating label:before {
+	content:'\f005';
+	padding:10px;
+	border:5px;
+	font-family: fontAwesome;
+	position:relative;
+	display:inherit;
+	font-size:30px;
+	color:#101010;
+}
+.rating label:after {
+	content:'\f005';
+	padding:10px;
+	border:5px;
+	font-family: fontAwesome;
+	position:absolute;
+	display:inherit;
+	font-size:30px;
+	color:#1f9cff;
+	top:0;
+	opacity:0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+.rating label:hover:after ,
+.rating label:hover ~ label:after,
+.rating input:checked~ label:after{
+	opacity:1;
 }

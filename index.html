@@ -2,170 +2,216 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/83fc3db2aa.js" crossorigin="anonymous"></script>
     <title>Romcom Movie Reviews</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <i class="material-icons">favorite</i>
-            <li class="logo">Cupid Flicks</li>
-            <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">FAQ</a></li>
+     <header>
+        <nav class="pt-20 navbar navbar-expand-lg navbar-light" style="background-color: #FF8282;">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">CUPID FLICKS</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movie A-Z</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Most Popular</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Family Friendly</a>
+                  </li>
+                </ul>
+                <form class="d-flex input-group w-auto">
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-dark"
+                    type="button"
+                    data-mdb-ripple-color="dark"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
-            <li class="search-icon">
-                <input type="search" placeholder="Search">
-                <label class="icon">
-                    <span class="fas fa-search"></span>
-                </label>
-            </li>
-        </ul>
-    </nav>
-    <h1>Best Romantic Comedies Of All Time</h1>
-    <div class="movie-list-container">
-        <div class="movie-list-wrapper">
-            <div class="movie-list">
-                <div class="movie-list-item">
-                    <img class="movie-list-item-img" src="image1.jpg" alt="">
+          </nav>
+    </header>
+    <div class="container">
+        <div class="title text-center">
+            <h1 class="text-uppercase my-5"></h1>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/10things.jfif">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">10 things I hate about you </h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star1"><label for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label for="star3"></label>
+                            <input type="radio" name="star" id="star1"><label for="star4"></label>
+                            <input type="radio" name="star" id="star1"><label for="star5"></label>
+
+                        </div>
+                        <p class="card-text">iNew student Cameron (Gordon-Levitt) is smitten with Bianca (Oleynik) and, in order to get around her father's strict rules on dating, attempts to get Patrick (Ledger) who is notorious in the school as a bad boy to date Bianca's ill-tempered sister, Kat (Stiles). </p>
                     </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="image2.jpg" alt="">
+                </div>
+            </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/50first.jfif">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">50 first dates</h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star1"><label for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label for="star3"></label>
+                            <input type="radio" name="star" id="star1"><label for="star4"></label>
+                            <input type="radio" name="star" id="star1"><label for="star5"></label>
+
+                        </div>
+                        <p class="card-text">Henry Roth (Adam Sandler)is afraid of commitment until he meets the beautiful Lucy (Drew Barrymore). They hit it off str aight off and he's finally found the girl of his dreams until he discovers she has short-term memory loss and forgets him the next day every single day.</p>
                     </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="image3.jpg" alt="">
+                </div>
+            </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/greek.jfif">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">My big fat greek wedding</h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star1"><label for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label for="star3"></label>
+                            <input type="radio" name="star" id="star1"><label for="star4"></label>
+                            <input type="radio" name="star" id="star1"><label for="star5"></label>
+
+                        </div>
+                        <p class="card-text">A young greek lady is set to marry a non-greek man. There is a struggle between the two cultures which tests the relationship </p>
                     </div>
-     <div class="movie-list-item">
-    <img class="movie-list-item-img" src="image4.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image16.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image6.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image7.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image15.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image17.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image18.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image19.jpg" alt="">
+                </div>
+            </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/hitch.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Hitch </h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star1"><label for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label for="star3"></label>
+                            <input type="radio" name="star" id="star1"><label for="star4"></label>
+                            <input type="radio" name="star" id="star1"><label for="star5"></label>
+
+                        </div>
+                        <p class="card-text">Alex Hitchens  is a relationship coach who has a new client Albert Brennaman. He tries to help him woe heiress Allegra Cole with his skills. He meets tabloid columnist Sara Melas who makes him question himself </p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="images/mamamia.jfif">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Mamma Mia</h3>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star1"><label for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label for="star3"></label>
+                            <input type="radio" name="star" id="star1"><label for="star4"></label>
+                            <input type="radio" name="star" id="star1"><label for="star5"></label>
+
+                        </div>
+                        <p class="card-text">This movie is a musical about a mother and daughter (Donna and Sophie). Sophie is set t marry but has to bring men from her mother’s past to find her real father to walk her down the aisle </p>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="movie-list-item">
-        <img class="movie-list-item-img" src="image23.jpg" alt="">
-    </div>
-    </div>
-<i class="fas fa-chevron-right arrow"></i>
-</div>
-</div>
-<div class="movie-list-container">
-    <div class="movie-list-wrapper">
-        <div class="movie-list">
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image8.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image9.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image10.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image11.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image12.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image13.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image14.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image21.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image20.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image22.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image24.jpg" alt="">
-</div>
-<div class="movie-list-item">
-    <img class="movie-list-item-img" src="image25.jpg" alt="">
-</div>
-</div>
-<i class="fas fa-chevron-right arrow"></i>
-</div>
-</div>
-<script>
-     $('nav ul li.btn span').click(function () {
-            $('nav ul div.items').toggleClass("show");
-            $('nav ul li.btn span').toggleClass("show");
-        });
-    </script>
-    <script src="script.js"></script>
-    <h2>About Us</h2>
-    <div class="info">
-    <p>We are a group of romcom movie enthusiasts who love to watch and review the latest romantic comedies. Our goal is to
-    provide honest and insightful reviews to help you decide which movies are worth watching.</p>
-    <img src="movies.jpg" alt="image" width="200" height="200">
-    </div>
-    <footer class=” text-center text-white fixed-bottom”style=“background-color: #FF8282;“>
+    <footer class=" text-center text-white fixed-bottom"style="background-color: #FF8282;">
         <!-- Grid container -->
-        <div class=“container p-4 pb-0”>
+        <div class="container p-4 pb-0">
             <!-- Section: Social media -->
-            <section class=“mb-4">
+            <section class="mb-4">
                 <!-- Facebook -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-facebook-f”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+    
                 <!-- Twitter -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-twitter”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+    
                 <!-- Google -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-google”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+    
                 <!-- Instagram -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-instagram”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+    
                 <!-- Linkedin -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-linkedin-in”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+    
                 <!-- Github -->
-                <a class=“btn btn-outline-light btn-floating m-1” href=“#!” role=“button”><i class=“fab fa-github”></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
+    
         <!-- Copyright -->
-        <div class=“text-center p-3” style=“background-color: rgba(136, 82, 82, 0.2);“>
+        <div class="text-center p-3" style="background-color: rgba(136, 82, 82, 0.2);">
             © 2023 Copyright:
-            <a class=“text-white” href=“#”>CUPID FLICKS</a>
+            <a class="text-white" href="#">CUPID FLICKS</a>
         </div>
         <!-- Copyright -->
     </footer>
-
-
-
-
-
-
-
 
 </body>
 </html>
